@@ -16,6 +16,7 @@ An intelligent, full-stack web application built on **Next.js 14 App Router** an
 
 ---
 
+
 ## 📐 System Architecture
 
 The project is structured to separate concern layers clearly, facilitating clean scaling:
@@ -82,6 +83,9 @@ sequenceDiagram
 To enable real Google Login, you will need to add Google Developer API credentials to your environment variables inside [**.env.local**](file:///c:/AIproject/.env.local):
 
 ```env
+# Gemini AI Configuration
+GEMINI_API_KEY=your_gemini_api_key
+
 # Google OAuth Client Credentials
 GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=your_google_client_secret
@@ -118,6 +122,71 @@ The UI has been overhauled to feel state-of-the-art and "AI-first":
 3. **SWOT Grid Quadrants**: Revamped with specific translucent colors (emerald-950/5 for strengths, rose-950/5 for weaknesses) bounded by thin borders that subtly scale up on mouse hovers (`hover:scale-[1.01]`).
 
 ---
+## Key Decisions & Trade-offs
+
+### Why Next.js Full Stack Architecture?
+I selected Next.js App Router because it allows building frontend and backend API routes inside a single codebase, reducing deployment complexity.
+
+### Why LangChain.js?
+LangChain was used to structure AI workflows and maintain a clean separation between prompt engineering and application logic.
+
+### Why Gemini 2.5 Flash Lite?
+Gemini Flash Lite provides fast response generation with lower latency, making it suitable for real-time investment analysis.
+
+### Why Google Authentication?
+Google OAuth was added using NextAuth.js to provide secure user access without storing user passwords.
+
+### Trade-offs:
+
+- Real-time stock market APIs were not integrated to keep the project lightweight.
+- The current version focuses on AI reasoning rather than live financial calculations.
+- Chat history is session based and does not use a permanent database.
+
+Future improvements:
+
+- Add live stock market data APIs.
+- Store user analysis history.
+- Add PDF investment report export.
+
+---
+
+## AI Usage During Development
+
+AI tools were actively used during the development process.
+
+Tools Used:
+
+### ChatGPT
+
+Used for:
+- Understanding assignment requirements
+- Planning project architecture
+- Improving prompt engineering
+- Debugging API and integration errors
+- README improvements
+
+
+### Gemini
+
+Used for:
+- Investment reasoning workflow testing
+- AI response quality improvements
+
+
+Developer Contribution:
+
+- Designed application flow
+- Implemented Next.js frontend
+- Integrated LangChain pipeline
+- Added authentication
+- Built investment dashboard
+- Deployed production version
+
+
+AI was used as a development assistant, while implementation decisions and final integration were handled manually.
+---
+
+
 
 ## 🛠️ Setup Steps
 
@@ -139,7 +208,7 @@ Launch the development server:
 ```bash
 npm run dev
 ```
-Open your browser and navigate to (https://invest-agent-ai.vercel.app/) to view the interface.
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the interface.
 
 ### 4. Build for Production
 To generate an optimized production bundle:
@@ -147,3 +216,9 @@ To generate an optimized production bundle:
 npm run build
 npm run start
 ```
+## Live Deployment
+
+https://invest-agent-ai.vercel.app/
+
+
+

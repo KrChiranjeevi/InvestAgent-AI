@@ -139,7 +139,7 @@ Launch the development server:
 ```bash
 npm run dev
 ```
-Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the interface.
+Open your browser and navigate to (https://invest-agent-ai.vercel.app/) to view the interface.
 
 ### 4. Build for Production
 To generate an optimized production bundle:

@@ -186,6 +186,97 @@ Developer Contribution:
 AI was used as a development assistant, while implementation decisions and final integration were handled manually.
 ---
 
+## 📊 Example Runs
+
+### Example 1: NVIDIA Corporation
+
+Input:
+
+NVIDIA Corporation
+
+
+AI Output:
+
+Company Overview:
+NVIDIA is a leading semiconductor company specializing in GPUs, AI computing, and data center solutions.
+
+Strengths:
+- Strong AI hardware leadership
+- Growing data center revenue
+- Advanced GPU ecosystem
+
+Risks:
+- High valuation
+- Increasing competition
+
+Investment Score:
+9/10
+
+Final Decision:
+
+INVEST ✅
+
+Reason:
+NVIDIA shows strong growth potential due to AI demand, innovation, and market leadership.
+
+
+---
+
+### Example 2: WeWork
+
+Input:
+
+WeWork
+
+
+AI Output:
+
+Company Overview:
+WeWork provides flexible workspace solutions but faced financial challenges and restructuring issues.
+
+Risks:
+- Weak profitability
+- High operational costs
+- Business uncertainty
+
+Investment Score:
+3/10
+
+Final Decision:
+
+PASS ❌
+
+Reason:
+High financial risk and uncertain long-term business stability make it unsuitable for investment.
+
+
+---
+
+### Example 3: Tesla
+
+Input:
+
+Tesla
+
+
+AI Output:
+
+Strengths:
+- EV market leadership
+- Strong brand value
+- Innovation
+
+Risks:
+- Competition
+- Market volatility
+
+Investment Score:
+8/10
+
+Final Decision:
+
+INVEST ✅
+---
 
 
 ## 🛠️ Setup Steps
